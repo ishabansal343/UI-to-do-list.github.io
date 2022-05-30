@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en">
+ <head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Books | To-Do</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ </head> 
+<body> 
+<div class="wrapper"> 
+<header>Books</header> 
+<hr> 
+<p>To-Do App</p> 
+<div class="inputContainer">
+ <div class="inputField"> 
+<input type="text" placeholder="Add your new todo"> 
+</div> 
+<div class="select"> 
+<select name="" id='priorityBox' onfocus="this.selectedIndex = 0;"> <option disabled selected>Select priority</option>
+ <option value='low'>Low priority</option> 
+<option value='mid'>Medium priority</option>
+ <option value='high'>High priority</option>
+ </select>
+ <button>
+<i class="fas fa-plus"></i> Add Todo Item</button>
+ </div> 
+
+</div>
+ <ul class="To-DoList">
+ <!-- data comes from local storage --> 
+</ul> <br>
+ <p>Filter Tasks</p> 
+<div class="filter"> 
+<button id='low'>Low</button> 
+<button id='mid'>Mid</button> 
+<button id='high'>High</button> 
+<button id='showAll'>Show All</button>
+ </div> 
+<div class="footer"> 
+<span>You have <span class="pendingTasks"></span> pending tasks</span>
+ <button>Clear All</button> 
+</div> 
+</div> 
+<script src="app.js"></script> 
+</body>
+ </html>
+
+
+
